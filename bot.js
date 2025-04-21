@@ -4,13 +4,6 @@ const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whis
 const qrcode = require('qrcode-terminal');
 const { getRole, hasPermission } = require('./utils/roleUtils');
 const { allowedGroups, prefix } = require('./config');
-const chalk = require('chalk').default;
-
-// Chalk colors for logging
-const blue = chalk`{hex('#00bfff')}`; // Use .hex() for custom colors
-const green = chalk.green;
-const red = chalk.red;
-const yellow = chalk.yellow;
 
 // Ensure logs folder exists
 const logsFolderPath = path.join(__dirname, 'logs');
